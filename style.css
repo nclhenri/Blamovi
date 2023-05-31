@@ -1,0 +1,257 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* HEADER */
+
+header{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0px;
+}
+
+.logo-imagem{
+    width: 48px;
+    height: 40px;
+    padding: 0px 5px;
+}
+
+
+.posicionamento_header{
+    display: flex;
+    align-items: center;
+}
+
+.logo-texto{
+    margin-left: 15px;
+    color: white;
+    font-family: 'Archivo', sans-serif;
+}
+
+.menu a{ 
+    font-size: 20px;
+    text-decoration: none;
+    color: #FBC02C;
+    margin: 0 15px;
+    padding: 5px 15px 0px 5px;
+    border-radius: 4px;
+    text-transform: uppercase;
+    font-family: 'Archivo', sans-serif;
+}
+
+
+
+
+/* Body */
+
+body{
+    background-color: rgb(29, 29, 29);
+
+}
+
+
+/* Switch */
+
+
+.slider{
+    position: relative;
+    background-color: #ccc;
+    width: 7vw;
+    height: 30px;
+    border: 2px solid #FAF5B0;
+    border-radius: 30px;
+    transition: all 300ms ease-in-out;
+}
+
+.toggle-wrapper{
+    margin: 0px 450px 0px 0px;
+}
+
+.button{
+    background-color: #FBC02C;
+    border: none;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    pointer-events: none;
+    top: 6px;
+    left: 3px;
+    position: absolute;
+    transition: all 300ms ease-in-out;
+}
+
+.toggle-wrapper label{
+    cursor: pointer;
+}
+
+.toggle-input:checked ~ .slider {
+    background: #FBC02C;
+}
+
+.toggle-input:checked ~ .slider > .button {
+    background: #ccc;
+    left: 70px;
+}
+
+.toggle-input{
+    display: none;
+}
+
+.switch > .slider:after {
+    position: absolute;
+    top: 2px;
+    right: 10px;
+    font-size: 20px;
+    font-family: 'Archivo', sans-serif;
+    z-index: 1;
+    transition: all 300ms ease-in-out;
+    content: "Feed";
+}
+
+/* Caixa de Pesquisa */
+
+.search_box{
+    position: absolute;
+    display: flex;
+    top: 12px;
+    left: 37%;
+    background: white;
+    height: 33px;
+    padding: 10px;
+    border-radius: 33px;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.search-txt{
+    border: none;
+    background: none;
+    outline: none;
+    padding: 0px 10px 0px 0px;
+    width: 250px;
+    
+}
+
+.search-btn{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+
+}
+
+/* Banner */
+
+.banner{
+    background-image: url(./img/banner2.svg);
+    background-size: cover;
+    display: flex;
+    height: calc(100vh - 200px);
+    
+}
+
+
+/* POSTER */
+
+
+.titulofilmefavorito{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Archivo', sans-serif;
+    font-size: 25px;
+    color: #FBC02C;
+    margin: 70px;
+    text-transform: uppercase;
+}
+
+.filmes-favoritos{
+    margin: 10px;
+}
+
+.card-linha {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px 20px 0;
+    
+}
+
+.card>img {
+    height: 470px;
+    width: 320px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.card>div {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-family: 'Archivo', sans-serif;
+    color: white;
+    padding: 10px 0px 0px 0px;
+    
+}
+
+
+h3{
+    font-family: 'Archivo', sans-serif;
+    color: #FBC02C;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    margin-bottom: 20px;
+
+}
+
+
+/* SÉRIES FAVORITAS */
+
+
+.tituloseriefavorito{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Archivo', sans-serif;
+    font-size: 25px;
+    color: #FBC02C;
+    margin: 70px;
+    text-transform: uppercase;
+}
+
+.series-favoritos{
+    margin: 10px;
+}
+
+
+/* RODAPÉ */
+
+
+.banner-rodape{
+    width: 100vw;
+}
+
+ul {
+    color: white;
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    font-family: 'Archivo', sans-serif;
+    
+}
+
+
+
+.informacoes-rodape{
+    text-align: center;
+    color: white;
+    padding-top: 10px;
+    font-family: 'Archivo', sans-serif;
+    background: rgb(0,0,0);
+    background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(12,21,86,1) 100%);
+}
